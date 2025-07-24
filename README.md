@@ -122,4 +122,3 @@ This feature enables users to switch between devices/clients without losing game
 ├── mysql_schema.sql             # Database setup
 └── *.bat                        # Startup scripts
 ```
-

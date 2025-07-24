@@ -1,0 +1,2 @@
+omniorb==4.2.3
+omniorb-py==4.3.0.post5

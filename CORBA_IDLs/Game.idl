@@ -1,0 +1,23 @@
+module GameApp {
+
+    typedef sequence<string> StringSeq;    
+    interface GameService {
+        string login(in string username, in string password);
+        string getUserType(in string username);
+        StringSeq startGame(in string username);
+        boolean guessLetter(in string username, in char letter);
+        string getPartialWord(in string username);
+        string getLeaderboard();
+        void quitGame(in string username);
+        void logout(in string username);
+        
+        // Admin functions
+        boolean createPlayer(in string username, in string password);
+        boolean updatePlayer(in string username, in string newPassword);
+        boolean deletePlayer(in string username);
+        string searchPlayer(in string username);
+        boolean setGameConfig(in long waitTime, in long roundDuration);
+        string getGameConfig();
+        string checkSessionStatus(in string username, in string sessionToken);
+    };
+};
